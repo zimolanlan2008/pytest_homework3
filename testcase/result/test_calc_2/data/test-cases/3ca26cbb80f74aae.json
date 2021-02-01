@@ -1,0 +1,134 @@
+{
+  "uid" : "3ca26cbb80f74aae",
+  "name" : "test_div[divisorfail]",
+  "fullName" : "test_calc.TestCalc#test_div",
+  "historyId" : "e31e120dabf62fe3b57c39d9f71be492",
+  "time" : {
+    "start" : 1612147341890,
+    "stop" : 1612147341890,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <testcase.test_calc.TestCalc object at 0x0000023BC1368670>, a = 7, b = 0, expect = 0, get_calc = <test_code.calc.Calculator object at 0x0000023BC1308670>, caculate = None\n\n    @pytest.mark.parametrize(\"a,b,expect\", divdatas_data, ids=myid_div)\n    @pytest.mark.run(order=4)\n    def test_div(self, a, b, expect,get_calc,caculate):\n        # 判断b不能等于0\n        if b == 0:\n            print(\"除数不能等于0\")\n>           assert False\nE           assert False\n\ntest_calc.py:81: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "caculate",
+    "time" : {
+      "start" : 1612147341889,
+      "stop" : 1612147341889,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612147341617,
+      "stop" : 1612147341617,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <testcase.test_calc.TestCalc object at 0x0000023BC1368670>, a = 7, b = 0, expect = 0, get_calc = <test_code.calc.Calculator object at 0x0000023BC1308670>, caculate = None\n\n    @pytest.mark.parametrize(\"a,b,expect\", divdatas_data, ids=myid_div)\n    @pytest.mark.run(order=4)\n    def test_div(self, a, b, expect,get_calc,caculate):\n        # 判断b不能等于0\n        if b == 0:\n            print(\"除数不能等于0\")\n>           assert False\nE           assert False\n\ntest_calc.py:81: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4c1282ea3fedd4b2",
+      "name" : "stdout",
+      "source" : "4c1282ea3fedd4b2.txt",
+      "type" : "text/plain",
+      "size" : 46
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "caculate::0",
+    "time" : {
+      "start" : 1612147341894,
+      "stop" : 1612147341894,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-CV4D84I5"
+  }, {
+    "name" : "thread",
+    "value" : "32636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "7"
+  }, {
+    "name" : "b",
+    "value" : "0"
+  }, {
+    "name" : "expect",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "3ca26cbb80f74aae.json",
+  "parameterValues" : [ "7", "0", "0" ]
+}

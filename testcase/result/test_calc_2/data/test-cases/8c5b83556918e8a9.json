@@ -1,0 +1,134 @@
+{
+  "uid" : "8c5b83556918e8a9",
+  "name" : "test_add[nonefail]",
+  "fullName" : "test_calc.TestCalc#test_add",
+  "historyId" : "a0d5437bfa1d881271b117c223a33d88",
+  "time" : {
+    "start" : 1612147341732,
+    "stop" : 1612147341733,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <testcase.test_calc.TestCalc object at 0x0000023BC139F160>, a = None, b = 9, expect = 0, get_calc = <test_code.calc.Calculator object at 0x0000023BC1308670>, caculate = None\n\n    @pytest.mark.parametrize(\"a,b,expect\", adddatas_data,\n                             ids=myid_add)\n    @pytest.mark.run(order=1)\n    def test_add(self, a, b, expect,get_calc,caculate):\n        # 实例化计算机类\n        # clac = Calculator()\n        if isinstance(a, str):\n            print(\"非数字类型\")\n            assert False\n    \n        elif a is None:\n            print(\"不能为空\")\n>           assert False\nE           assert False\n\ntest_calc.py:60: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "caculate",
+    "time" : {
+      "start" : 1612147341732,
+      "stop" : 1612147341732,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612147341617,
+      "stop" : 1612147341617,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <testcase.test_calc.TestCalc object at 0x0000023BC139F160>, a = None, b = 9, expect = 0, get_calc = <test_code.calc.Calculator object at 0x0000023BC1308670>, caculate = None\n\n    @pytest.mark.parametrize(\"a,b,expect\", adddatas_data,\n                             ids=myid_add)\n    @pytest.mark.run(order=1)\n    def test_add(self, a, b, expect,get_calc,caculate):\n        # 实例化计算机类\n        # clac = Calculator()\n        if isinstance(a, str):\n            print(\"非数字类型\")\n            assert False\n    \n        elif a is None:\n            print(\"不能为空\")\n>           assert False\nE           assert False\n\ntest_calc.py:60: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f514e7500006bdce",
+      "name" : "stdout",
+      "source" : "f514e7500006bdce.txt",
+      "type" : "text/plain",
+      "size" : 39
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "caculate::0",
+    "time" : {
+      "start" : 1612147341736,
+      "stop" : 1612147341736,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-CV4D84I5"
+  }, {
+    "name" : "thread",
+    "value" : "32636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "None"
+  }, {
+    "name" : "b",
+    "value" : "9"
+  }, {
+    "name" : "expect",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "8c5b83556918e8a9.json",
+  "parameterValues" : [ "None", "9", "0" ]
+}

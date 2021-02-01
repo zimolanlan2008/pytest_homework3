@@ -1,0 +1,104 @@
+{
+  "uid" : "8bf86e3f4c27e81c",
+  "name" : "test_sub[None-9--9]",
+  "fullName" : "test_calc.TestCalc#test_sub",
+  "historyId" : "5af7a6e4cc31c80ed6e0322dd8a757b4",
+  "time" : {
+    "start" : 1612147341785,
+    "stop" : 1612147341786,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <testcase.test_calc.TestCalc object at 0x0000023BC13E5A90>, a = None, b = 9, expect = -9, get_calc = <test_code.calc.Calculator object at 0x0000023BC1308670>\n\n    @pytest.mark.parametrize(\"a,b,expect\", subdatas_data)\n    @pytest.mark.run(order=2)\n    def test_sub(self, a, b, expect,get_calc):\n    \n        if isinstance(a, str):\n            print(\"非数字类型\")\n            assert False\n    \n        elif a is None:\n            print(\"不能为空\")\n>           assert False\nE           assert False\n\ntest_calc.py:109: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1612147341617,
+      "stop" : 1612147341617,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <testcase.test_calc.TestCalc object at 0x0000023BC13E5A90>, a = None, b = 9, expect = -9, get_calc = <test_code.calc.Calculator object at 0x0000023BC1308670>\n\n    @pytest.mark.parametrize(\"a,b,expect\", subdatas_data)\n    @pytest.mark.run(order=2)\n    def test_sub(self, a, b, expect,get_calc):\n    \n        if isinstance(a, str):\n            print(\"非数字类型\")\n            assert False\n    \n        elif a is None:\n            print(\"不能为空\")\n>           assert False\nE           assert False\n\ntest_calc.py:109: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8f66f673a1b6b68",
+      "name" : "stdout",
+      "source" : "8f66f673a1b6b68.txt",
+      "type" : "text/plain",
+      "size" : 13
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-CV4D84I5"
+  }, {
+    "name" : "thread",
+    "value" : "32636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "a",
+    "value" : "None"
+  }, {
+    "name" : "b",
+    "value" : "9"
+  }, {
+    "name" : "expect",
+    "value" : "-9"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "8bf86e3f4c27e81c.json",
+  "parameterValues" : [ "None", "9", "-9" ]
+}
